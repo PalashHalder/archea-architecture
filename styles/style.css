@@ -490,15 +490,72 @@ body{
     text-decoration: underline;
     cursor: pointer;
 }
-    
-    
-
-
-
-
 
 /* ========== pendamic section start ========== */
-
-
 /* ========== footer section start ========== */
+#footer{
+    padding-top: 100px;
+}
+
+#footer p{
+    font-size: 24px;
+    color: #FFFFFF;
+
+}
+
+.footer-text{
+    display: flex;
+    /* display: grid; */
+    /* grid-template-columns: 1fr, 1fr; */
+    max-width: 685px;
+    margin-top: 20px;
+    justify-content: start;
+    column-gap: 36px;
+    align-items: center;   
+}
+
+.footer-text h2{
+    color: #40444F;
+    font-size: 72px;
+    line-height: 150%;
+}
+
+.footer-text a{
+    height: 56px;
+    width: 56px;
+    color: #FFFFFF;
+    background: #40444F;
+    display: grid;
+    border-radius: 50%;
+    justify-content: center;
+   place-items: center;
+    font-size: 24px;
+    padding: 6px 14px;
+}
+
+.footer-icon{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 43px;
+    align-items: center;
+    justify-content: start;
+    column-gap: 24px;
+    margin-bottom: 224px;
+}
+
+.footer-icon a{
+    height: 56px;
+    width: 56px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    display: grid;
+    font-size: 24px;
+    place-items: center;
+    justify-content: center;
+    column-gap: 24px;
+    margin-bottom: 224px;
+    color: #C1C4CD;
+    border: 1px solid rgba(34, 68, 79, 0.4);
+}
+
 /* ========== footer section end ============ */
