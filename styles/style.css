@@ -181,7 +181,7 @@ body{
 }
 
 #projects h3 span{
-    color: rgba(255, 255, 255, 0.5);
+    color: rgb(17, 173, 245);
 }
 
 .projects-btn{
@@ -224,10 +224,281 @@ body{
     border-radius: 50px;
     font-size: 20px;
 }
+
+.projects-item{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(397px, 1fr));
+    gap: 24px;
+    grid-auto-rows: 48.5px;
+    margin-top: 78px;
+    margin-bottom: 160px;
+}
+
+.projects-item-one{
+    background: #5E666F;
+    grid-row-end: span 11;
+}
+
+.projects-item-two{
+    background: #595C5D;
+    grid-row-end: span 5;
+}
+
+.projects-item-three{
+    background: #B1B8C2;
+    grid-row-end: span 7;
+}
+
+.projects-item-four{
+    background: #B1B8C2;
+    grid-row-end: span 6;
+}
+
+.projects-item-five{
+    background: #595C5D;
+    grid-row-end: span 4;
+}
+
 /* ========== projects section start ========== */
 
-/* ========== header section start ========== */
-/* ========== header section start ========== */
+/* ========== award section start ========== */
 
-/* ========== header section start ========== */
-/* ========== header section start ========== */
+
+#award{
+    padding-top: 96px;
+}
+
+#award h3{
+    width: 703px;
+    color: #FFF;
+    text-align: center;
+    justify-content: center;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 150%; 
+    margin-bottom: 12px;
+    margin: 0 auto;
+}
+
+#award p{
+    margin-top: 12px;
+    width: 482px;
+    color: #FFF;
+    text-align: center;
+    font-size: 19px;
+    line-height: 150%;
+    margin: 0 auto;
+}
+
+.award-btn{
+    margin-top: 56px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    padding-bottom: 24px;
+    column-gap: 1px solid rgba(113, 113, 115, 0.6);
+}
+
+.award-btn .award-btn-year{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(102px, 1fr));
+    column-gap: 16px;
+}
+
+.award-btn .award-btn-year a{
+    padding: 12px 24px;
+    border: 1px solid #555557;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    color: #FFFFFF;
+    justify-self: center;
+}
+
+.award-btn .award-btn-year .active{
+    background: #555555;
+    color: #ffffff;
+}
+
+.award-btn .award-btn-all{
+    justify-self: end;
+}
+
+.award-btn .award-btn-all a{
+    color: #FFFFFF;
+    padding: 12px 24px;
+    border: 1px solid #555557;
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+/* ========== award section start ========== */
+
+/* ========== pendamic section start ========== */
+#pendamic .sidebyside{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(385px, 1fr ));
+    gap: 24px;
+    grid-auto-rows: 18px;
+    margin-top: 36px;
+    margin-bottom: 116px;
+}
+
+
+
+.overlay{
+    width: 1000%;
+    height: 0%;
+    background: rgba(0, 0, 0, .5);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: .4s;
+
+}
+
+.item{
+    position: relative;
+}
+
+ /* ডানে বামে করতে width ০% ও ১০০% করতে হবে। উপর-নিচ করতে height ০% ও ১০০% করতে হবে।  */
+/* .item:hover .overlay{
+    width: 100%;
+    opacity: 1;
+} */
+
+
+
+/* .item::after{
+    width: 100%;
+    height: 100%;
+    background: rgb(48, 47, 47);
+    display: inline-block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s;
+    /* middle theke effect dite */
+    transform: scale(0);
+
+} */
+
+
+.item:hover::after{
+    transform: scale(1);
+}
+
+.one{
+    background: linear-gradient(180deg, #3C3F49 0%, rgba(60, 63, 73, 0.00) 100%);
+    grid-row-end: span 6;
+    padding: 24px;
+}
+
+.one h4{
+    font-size: 24px;
+    color: #B1B8C2;
+}
+
+.one h5{
+    font-size: 34px;
+    color: #FFFFFF;
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.country-name{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: start;
+    column-gap: 14px;
+}
+
+.country-name a{
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+
+
+.two{
+    background: #5E666F;
+    grid-column-end: span 2;
+    grid-row-end: span 10;
+}
+
+.three{
+    background: #485518;
+    grid-row-end: span 10;
+}
+
+.four{
+    background: #282F0E;
+    grid-row-end: span 6;
+    display: grid;
+    place-items: center;
+
+}
+
+.four button{
+    padding: 12px 24px;
+    border-radius: 50px;
+    border: none;
+    background: #FFFFFF;
+    color: #121316;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.four button:hover{
+    background: #0a59ec;
+    color: #FFFFFF;
+}
+
+.five{
+    color: #FFFFFF;
+    background: #282F0E;
+    grid-row-end: span 6;
+    padding: 24px;
+}
+
+.five h4{
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.five-item-text{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: start;
+    column-gap: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(181, 186, 163, 0.5);
+}
+
+
+.five-item-text h5{
+    font-size: 14px;
+    
+    
+}
+
+.five-item-text h5:first-child{
+    text-decoration: underline;
+    cursor: pointer;
+}
+    
+    
+
+
+
+
+
+/* ========== pendamic section start ========== */
+
+
+/* ========== footer section start ========== */
+/* ========== footer section end ============ */
